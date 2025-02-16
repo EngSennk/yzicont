@@ -9,7 +9,8 @@ body {
 .
 
 /* Pop-up do formulário */
-.popup {
+.popup 
+{
     display: none;
     position: fixed;
     top: 0;
@@ -18,6 +19,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 .popup-content {
@@ -30,9 +32,9 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-   
-   
+    transition: 0.5s ease;
 }
+   
 
 .popup-close {
     position: absolute;
@@ -42,7 +44,7 @@ body {
     font-weight: bold;
     color: #333;
     cursor: pointer;
-    transition: 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .popup-left {
@@ -52,7 +54,7 @@ body {
 .popup-left h2 {
     margin-top: 0px;
     font-size: 40px;
-    text-align: center;
+    text-align: center
     color: #ddd;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -60,8 +62,7 @@ body {
 
     font-size: 25px;
     text-align: justify;
-    color: #084610;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
 
 }
 .popup-right {
@@ -75,17 +76,24 @@ body {
     text-shadow: 2px 2px 5px rgba(92, 184, 64, 0.2);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-.popup-right label .atividade p
+.popup-right label .whatsapp .ligacao
+{
+    font-size: 40px;
+    color: #0c3b07;
+    text-shadow: 2px 2px 5px rgba(92, 184, 64, 0.2);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+ p
 {
     font-size: 20px;
-    color: #0c3b07;
+    color: #e5f1e3;
     text-shadow: 2px 2px 5px rgba(92, 184, 64, 0.2);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }    
 .popup-left img 
 {
-    size: 30px;
-    border-radius: 8px;
+    size: 40px;
+    border-radius: 400px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -115,21 +123,27 @@ form button[type="submit"] {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
+
 
 /* Estilos do restante do conteúdo */
 header {
     background-color: #30e48a;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   text-shadow: 10px 10px 5px 2px rgba(4, 36, 8, 0.2);
 }
 
 nav ul {
+    font-size: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    text-shadow: #2bd333;
 }
 
 nav li {
@@ -147,31 +161,51 @@ nav a {
 nav a:hover {
     background-color: #f0f0f0;
 }
-
+ 
 .container {
-    max-width: 960px;
+    display: block
+    font-size: 20px;
+    text-align: justify;
+    max-width:block;
     margin: 20px auto;
     padding: 20px;
 }
 
-h1 {
+.container h1 {
+    display: block
+    font-size: 40px;
+    margin-bottom:block;
     text-align: center;
-    margin-bottom: 20px;
+    color: #c9dbc8;
+    text-shadow: 3px 5px 5px rgb(11, 235, 30);
 }
 
-.servicos {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.servico {
+.servico-empresa {
+    
+    padding: 10px;
     text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 200px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    display: block;
+    margin-left:0px;
+    width: 30%;
+
+}
+
+.servico-empresario {
+    margin-left: 800px;
+    padding: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: block;
+    width: 30%;
 }
 
 .servico h2 {
@@ -185,6 +219,12 @@ h1 {
 
 .servico li {
     margin-bottom: 5px;
+}
+.servicos .imgleft {
+    size: 30px;
+    display: flex;
+    justify-content: space-between
+    margin-bottom: 20px;
 }
 
 footer {
