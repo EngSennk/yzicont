@@ -3,147 +3,24 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #43b417;
+    background-color: #e5f1e3; /* Tom de verde mais suave */
     color: #333;
-}
-.
-
-/* Pop-up do formulário */
-.popup 
-{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    transition: all 0.3s ease;
+    line-height: 1.6;
 }
 
-.popup-content {
-    background-color: #2bd333;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    transition: 0.5s ease;
-}
-   
-
-.popup-close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.popup-left {
-    width: 50%;
-    padding-right: 20px;
-}
-.popup-left h2 {
-    margin-top: 0px;
-    font-size: 40px;
-    text-align: center
-    color: #ddd;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.popup-left p {
-
-    font-size: 25px;
-    text-align: justify;
-    color: #ffffff;
-
-}
-.popup-right {
-    width: 50%;
-    size: 18px;
-}
-.popup-right label 
-{
-    font-size: 20px;
-    color: #0c3b07;
-    text-shadow: 2px 2px 5px rgba(92, 184, 64, 0.2);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-.popup-right label .whatsapp .ligacao
-{
-    font-size: 40px;
-    color: #0c3b07;
-    text-shadow: 2px 2px 5px rgba(92, 184, 64, 0.2);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
- p
-{
-    font-size: 20px;
-    color: #e5f1e3;
-    text-shadow: 2px 2px 5px rgba(92, 184, 64, 0.2);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-}    
-.popup-left img 
-{
-    size: 40px;
-    border-radius: 400px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilos do formulário */
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-form button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s ease;
-    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-
-/* Estilos do restante do conteúdo */
+/* Cabeçalho e Navegação */
 header {
     background-color: #30e48a;
     padding: 20px;
-   text-shadow: 10px 10px 5px 2px rgba(4, 36, 8, 0.2);
 }
 
 nav ul {
-    font-size: 20px;
+    font-size: 18px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
-    text-shadow: #2bd333;
 }
 
 nav li {
@@ -161,75 +38,77 @@ nav a {
 nav a:hover {
     background-color: #f0f0f0;
 }
- 
+
+/* Conteúdo Principal */
 .container {
-    display: block
-    font-size: 20px;
-    text-align: justify;
-    max-width:block;
+    max-width: 960px;
     margin: 20px auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .container h1 {
-    display: block
-    font-size: 40px;
-    margin-bottom:block;
+    font-size: 2.5em;
     text-align: center;
-    color: #c9dbc8;
-    text-shadow: 3px 5px 5px rgb(11, 235, 30);
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.servico-empresa {
-    
-    padding: 10px;
-    text-align: center;
+.services-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 48%; /* Ajuste para ocupar quase metade da largura */
+    background-color: #fff; /* Adiciona fundo branco para melhor visualização */
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    display: block;
-    margin-left:0px;
-    width: 30%;
-
-}
-
-.servico-empresario {
-    margin-left: 800px;
-    padding: 10px;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    display: block;
-    width: 30%;
 }
 
-.servico h2 {
+.image-container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
-.servico ul {
+.service img {
+    max-width: 150px; /* Tamanho mediano */
+    height: auto;
+    border-radius: 10px;
+    margin: 0 10px; /* Espaçamento entre as imagens */
+}
+
+.service h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service ul {
     list-style: none;
     padding: 0;
 }
 
-.servico li {
+.service li {
     margin-bottom: 5px;
 }
-.servicos .imgleft {
-    size: 30px;
-    display: flex;
-    justify-content: space-between
-    margin-bottom: 20px;
-}
 
+/* Rodapé */
 footer {
     background-color: #165805;
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+/* Media Query para Responsividade */
+@media (max-width: 768px) {
+    .service {
+        width: 100%; /* Ocupa toda a largura em telas menores */
+    }
 }

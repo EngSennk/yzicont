@@ -9,45 +9,6 @@
 </head>
 
 <body>
-    <!-- <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="popup-close">&times;</span>
-
-            <div class="popup-left">
-                <h2>Ficou com alguma dúvida?</h2>
-                <p>Preencha as informações ao lado e em breve entraremos em contato com você.</p>
-                <img src="img/popup.jpg" alt="">
-            </div>  
-
-            <div class="popup-right">
-                <form>
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" required><br><br>
-
-                    <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" required><br><br>
-
-                    <label for="email">Qual é o seu e-mail?</label>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="cidade">Em qual cidade sua empresa está situada?</label>
-                    <input type="text" id="cidade" name="cidade" required><br><br>
-
-                    <label for="atividade">Descrição da atividade que você exercerá na empresa:</label>
-                    <input type="text" id="atividade" name="atividade" required><br><br>
-
-                    <p>Como prefere que entremos em contato?</p>
-                    <input type="radio" id="whatsapp" name="contato" value="whatsapp" required>
-                    <label for="whatsapp">Via WhatsApp</label>
-                    <input type="radio" id="ligacao" name="contato" value="ligacao">
-                    <label for="ligacao">Via Ligação</label><br><br>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </div> -->
-
     <header>
         <nav>
             <ul>
@@ -64,8 +25,12 @@
     <main>
         <section class="container">
             <h1>Serviços de Contabilidade</h1>
-                <div class="servico-empresa">
-                    <!-- <img id="imgleft" src="img/empresaria.jpg" alt=""> -->
+            <div class="services-wrapper">
+                <div class="service">
+                    <div class="image-container">
+                        <img id="img-empresa" src="img/empresa.jpg" alt="Para sua empresa">
+                        <img id="img-empresaria" src="img/empresaria.jpg" alt="Para você">
+                    </div>
                     <h2>Para sua empresa</h2>
                     <ul>
                         <li>Abrir empresa grátis</li>
@@ -74,9 +39,7 @@
                         <li>Contabilidade completa</li>
                     </ul>
                 </div>
-
-                <div class="servico-empresario">
-                    <!-- <img id="imgright" src="img/empresaria.jpg" alt=""> -->
+                <div class="service">
                     <h2>Para você</h2>
                     <ul>
                         <li>Escritório Virtual</li>
@@ -95,7 +58,7 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="JS/poup.js"> </script>
+    <script src="JS/poup.js"></script>
 </body>
 
 </html>
