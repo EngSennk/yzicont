@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YZY CONTABILIDADE</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+        }
+      </style>
 </head>
 
 <body>
@@ -27,9 +33,8 @@
             <h1>Serviços de Contabilidade</h1>
             <div class="services-wrapper">
                 <div class="service">
-                    <div class="image-container">
+                    <div class="service-empresa">
                         <img id="img-empresa" src="img/empresa.jpg" alt="Para sua empresa">
-                        <img id="img-empresaria" src="img/empresaria.jpg" alt="Para você">
                     </div>
                     <h2>Para sua empresa</h2>
                     <ul>
@@ -39,7 +44,10 @@
                         <li>Contabilidade completa</li>
                     </ul>
                 </div>
-                <div class="service">
+                <div class="service-empresaria">
+                    <div>
+                        <img id="img-empresaria" src="img/empresaria.jpg" alt="Para você">
+                    </div>
                     <h2>Para você</h2>
                     <ul>
                         <li>Escritório Virtual</li>
